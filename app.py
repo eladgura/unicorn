@@ -23,7 +23,7 @@ class User(db.Model):
 # Define a route
 @app.route("/<name>")
 def hello(name):
-    return f"Hello, {escape(name)}!"
+    return f"Hello, {(name)}!"
 
 # Create database tables
 with app.app_context():
